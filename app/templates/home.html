@@ -1,27 +1,24 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <!-- <div class="container">
+    <div class="container">
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th scope="col">Title</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Odometer</th>
-                    <th scope="col">Price</th>
+                    <th scope="col">Category ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Last Updated</th>
                 </tr>
             </thead>
             <tbody>
-                {% for vehicle in vehicles %}
+                {% for category in categories %}
                     <tr>
-                        <th scope="row">{{vehicle.vehicle_title}}</th>
-                        <td>{{vehicle.description}}</td>
-                        <td>{{vehicle.odometer}}</td>
-                        <td>{{vehicle.price_info}}</td>
+                        <th scope="row">{{ category[0] }}</th>
+                        <td>{{ category[1] }}</td>
+                        <td>{{ category[2] }}</td>
                     </tr>
                 {% endfor %}
             </tbody>
         </table>
-    </div> -->
-    <p>test</p>
+    </div>
 {% endblock content %}
