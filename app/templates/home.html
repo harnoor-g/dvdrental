@@ -3,8 +3,8 @@
 {% block content %}
     <div class="container">
         <form method="post">
-            <input type="text" name="name" placeholder="Category Name">
-            <button type="submit">Add Category</button>
+            <input type="text" name="category" placeholder="Category Name">
+            <button type="submit" name="create">Add Category</button>
         </form>
         <table class="table table-striped">
             <thead>
@@ -20,6 +20,13 @@
                         <th scope="row">{{ category[0] }}</th>
                         <td>{{ category[1] }}</td>
                         <td>{{ category[2] }}</td>
+                        <td>
+                            <form method="post">
+                                <input type="text" name="new_category" placeholder="New Category Name">
+                                <button type="submit" name="update" value="{{ category[0] }}">Update</button>
+                                <button type="submit" name="delete" value="{{ category[0] }}">Delete</button>
+                            </form>
+                        </td>
                     </tr>
                 {% endfor %}
             </tbody>
