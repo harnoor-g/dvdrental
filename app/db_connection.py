@@ -1,3 +1,10 @@
+'''
+>>
+>> MODULE FOR CREATING DATABASE CONNECTION 
+>> DATABASE INFORMATION LOADED FROM JSON FILE IN RESOURCES FOLDER
+>>
+'''
+
 from psycopg2 import connect
 from json import load
 

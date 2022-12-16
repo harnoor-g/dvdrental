@@ -1,4 +1,12 @@
+'''
+>>
+>> INITIALISE APP 
+>> IMPORT ROUTES 
+>>
+'''
+
 from flask import Flask
+
 
 app = Flask(__name__)
 

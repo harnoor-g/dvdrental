@@ -1,3 +1,9 @@
+'''
+>>
+>> RUN APP 
+>>
+'''
+
 from app import app
 
 

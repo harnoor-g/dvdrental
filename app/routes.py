@@ -1,3 +1,11 @@
+'''
+>>
+>> ROUTING FOR APPLICATION
+>> RUNS QUERIES TO DATABASE IF BUTTONS ARE PRESSED 
+>> RENDERS home.html FILE 
+>>
+'''
+
 from app import app
 from flask import render_template, request
 from app.db_connection import open_db_connection
